@@ -33,7 +33,10 @@ let curLevel=-1, phase='', phaseT=0;
 const levels=[];
 const levelHandlers=[];
 
+const HIDDEN_LEVELS=new Set(['The Gas War']);
+
 function registerLevel(name,handler){
+  if(HIDDEN_LEVELS.has(name))return;
   const idx=levels.length;
   levels.push({name,unlocked:idx===0,completed:false});
   levelHandlers.push(handler);
