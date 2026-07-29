@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Hostena</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    max-width: 46rem;
+    background: #fff;
+    color: #1a1a1a;
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .5rem; }
+  .meta { color: #666; font-size: .95rem; margin: 0 0 2rem; }
+  ul { padding-left: 1.35rem; }
+  li { margin: .4rem 0; }
+  code { background: #f4f4f5; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  a { color: #0b57d0; }
+  hr { border: 0; border-top: 1px solid #e5e5e5; margin: 3rem 0 1.5rem; }
+  footer { color: #666; font-size: .9rem; }
+  .callout {
+    background: #f7f9fc;
+    border: 1px solid #e3e8ef;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Hostena — Instagram booking assistant. Last updated: 29 July 2026.</p>
+
+<p>
+  Hostena (&ldquo;the App&rdquo;, &ldquo;we&rdquo;) is a booking assistant for a short-stay
+  rental property. It reads direct messages sent to a connected Instagram professional
+  account, answers questions about availability and prices, and records reservations in a
+  connected Google Calendar.
+</p>
+<p>
+  This policy explains what data the App collects, why it is processed, how long it is kept,
+  and how you can have it deleted. It is our own policy and applies to everyone who uses the
+  App or messages an Instagram account connected to it.
+</p>
+
+<div class="callout">
+  <strong>Operator.</strong> The App is operated by [OPERATOR NAME]. For any privacy question
+  or request, including deletion of your data, contact
+  <a href="mailto:contact@example.com">contact@example.com</a>.
+</div>
+
+<h2>1. Who the App is for</h2>
+<p>
+  There are two kinds of people whose data the App processes:
+</p>
+<ul>
+  <li>
+    <strong>Hosts</strong> — the property owner or manager, who connects their own Instagram
+    professional account and Google Calendar to the App.
+  </li>
+  <li>
+    <strong>Guests</strong> — people who send a direct message to a connected Instagram
+    account, or who use the web chat on the host&rsquo;s site.
+  </li>
+</ul>
+
+<h2>2. Data we collect and why</h2>
+
+<h3>Instagram account data (host)</h3>
+<p>
+  When a host connects their Instagram professional account, the App requests the
+  <code>instagram_business_basic</code> and <code>instagram_business_manage_messages</code>
+  permissions and stores:
+</p>
+<ul>
+  <li>the Instagram account ID and username, to identify which account an incoming message belongs to;</li>
+  <li>a long-lived Instagram access token, encrypted at rest, so the App can receive messages and reply on the host&rsquo;s behalf;</li>
+  <li>the token&rsquo;s expiry date, so the App can refresh it before it lapses.</li>
+</ul>
+
+<h3>Direct message content (guest)</h3>
+<p>
+  For each direct message delivered to a connected account, the App stores the message ID, the
+  Instagram-scoped ID (IGSID) of the sender, the message text, metadata about any attachments,
+  the timestamp, and the raw notification payload received from Meta. This is used solely to
+  understand the guest&rsquo;s request, generate a relevant reply, and keep the context of the
+  conversation so the guest does not have to repeat themselves.
+</p>
+
+<h3>Google Calendar data (host)</h3>
+<p>
+  If a host connects a Google account, the App stores the account&rsquo;s email address, the
+  identifier of the selected calendar, the granted scopes, and encrypted OAuth access and
+  refresh tokens. Calendar events are read to answer availability questions and written to
+  record a confirmed reservation. The App does not read calendars other than the one the host
+  selects.
+</p>
+
+<h3>Reservation records</h3>
+<p>
+  When a booking is confirmed, the App stores a booking reference, the guest name given in the
+  conversation, the cottage, check-in and check-out dates, the number of guests, the nightly
+  and total price, and the booking status. This is what lets a guest look up their own booking
+  later by reference.
+</p>
+
+<h3>Conversation transcripts</h3>
+<p>
+  The App keeps a transcript of the assistant conversation (who said what, and when) so the
+  assistant can follow a multi-step booking. Web chat conversations are keyed to a browser
+  cookie; Instagram conversations are keyed to the sender&rsquo;s IGSID.
+</p>
+
+<h3>What we do not collect</h3>
+<p>
+  The App does not collect payment card details, government identifiers, precise location, or
+  contact lists. It does not use your data for advertising, does not build advertising
+  profiles, and does not sell or rent your data to anyone.
+</p>
+
+<h2>3. Legal basis for processing</h2>
+<p>
+  Where the GDPR applies, we process host data on the basis of the host&rsquo;s consent, given
+  through the Instagram and Google authorisation screens, and guest data on the basis of our
+  legitimate interest in answering an enquiry the guest initiated and in performing a booking
+  the guest asked for. Consent can be withdrawn at any time, as described in section 6.
+</p>
+
+<h2>4. Who we share data with</h2>
+<p>
+  We do not sell data. We share it only with the service providers the App is built on:
+</p>
+<ul>
+  <li>
+    <strong>Meta Platforms</strong> — inbound and outbound Instagram messages necessarily pass
+    through Meta&rsquo;s Instagram Messaging API.
+  </li>
+  <li>
+    <strong>Google</strong> — availability checks and reservation entries are read from and
+    written to Google Calendar.
+  </li>
+  <li>
+    <strong>OpenAI</strong> — message text and conversation context are sent to OpenAI&rsquo;s
+    API to generate the assistant&rsquo;s replies. Please avoid sending sensitive personal
+    information in a chat message.
+  </li>
+</ul>
+<p>
+  We may also disclose data where we are legally required to do so.
+</p>
+
+<h2>5. Storage, security and retention</h2>
+<p>
+  Data is stored in a database on infrastructure controlled by the operator. Instagram and
+  Google access tokens are encrypted at rest; they are never written to logs or exposed in the
+  App&rsquo;s interface. Access is limited to the operator.
+</p>
+<p>
+  Messages, transcripts and reservation records are kept for as long as needed to run the
+  service and to answer questions about a past booking, and are deleted on request. When a
+  host disconnects an account, the stored tokens for that account are removed.
+</p>
+
+<h2 id="data-deletion">6. Your rights, and how to delete your data</h2>
+<p>
+  You can ask us to access, correct, export or delete the data we hold about you, and you can
+  object to our processing of it. There is no charge, and we will respond within 30 days.
+</p>
+<p>
+  <strong>To request deletion,</strong> email
+  <a href="mailto:contact@example.com">contact@example.com</a> from the address associated with
+  your account, or send a message containing the words &ldquo;delete my data&rdquo; from the
+  Instagram account you used. Include your Instagram username so we can locate the records. We
+  will delete your messages, conversation transcripts and reservation records, and confirm
+  once it is done.
+</p>
+<p>
+  <strong>To revoke the App&rsquo;s access</strong> without contacting us:
+</p>
+<ul>
+  <li>
+    <em>Instagram:</em> open Instagram, then Settings &rarr; Website permissions &rarr; Apps
+    and websites, and remove the App. You can also manage this at
+    <a href="https://www.instagram.com/accounts/manage_access/">instagram.com/accounts/manage_access</a>.
+  </li>
+  <li>
+    <em>Google:</em> go to
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> and
+    remove the App&rsquo;s access.
+  </li>
+</ul>
+<p>
+  Revoking access stops all further processing immediately. It does not by itself erase data
+  already stored, so send a deletion request as well if that is what you want.
+</p>
+
+<h2>7. International transfers</h2>
+<p>
+  The service providers listed in section 4 may process data outside your country, including
+  in the United States. Those transfers rely on the safeguards those providers have in place,
+  such as the European Commission&rsquo;s standard contractual clauses.
+</p>
+
+<h2>8. Children</h2>
+<p>
+  The App is not directed at children under 13, and we do not knowingly collect their data. If
+  you believe a child has sent us personal data, contact us and we will delete it.
+</p>
+
+<h2>9. Changes to this policy</h2>
+<p>
+  If we change this policy we will update the date at the top of this page. Material changes
+  will be described here rather than made silently.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+  [OPERATOR NAME] &middot; <a href="mailto:contact@example.com">contact@example.com</a>
+</p>
+
+<hr>
+<footer>
+  <p><a href="./terms.html">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
